@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Борис Бахтин](https://up.htmlacademy.ru/htmlcss/28/user/452047).
-* Наставник: `Неизвестно`.
+* Наставник: [Анатолий Долгов] (https://htmlacademy.ru/profile/dolgov_anatoly).
 
 ---
 
