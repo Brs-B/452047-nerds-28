@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       
     <header>
       <nav>
-        <a href="index.html">
+        <a class="nerds-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
-        <ul>
+        <ul class="site_navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
-        <a href="">Корзина</a>
+        <div class="cart_navigation">
+          <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
+          <a href="">Корзина</a>
+        </div>
       </nav>
     </header>
     
     <main>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="catalog_title">Магазин готовых шаблонов</h1>
       
       <section>
         <h2 class="visually_hidden">Сортировка</h2>
-        <ul>Сортировать:
+        <ul class="sort">Сортировать:
           <li>По цене</li>
           <li>По типу</li>
           <li>По названию</li>
@@ -35,27 +40,31 @@
       </section>
 
       <section>
-        <h2>Стоимость:</h2>
+        <h2 class="visually_hidden">Стоимость-ползунок</h2>
+        <label for="price">Стоимость:</label>
+          <input type="range" id="price" name="price" min="0" max="15000" multiple>
+          <output name="price">0</output>
+          <output name="price">15000</output>
         
       </section>
       
       <section>
         <h2 class="visually_hidden">Фильтр каталога</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сетка:</legend>
-              <ul>
+              <ul >
                 <li>
-                  <input type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
+                  <input class="filter-input" type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
                   <label for="filter_adaptive">Адаптивная</label>
                 </li>
                 <li>
-                  <input type="radio" name="grid" id="filter_fixed" value="fixed">
+                  <input class="filter-input" type="radio" name="grid" id="filter_fixed" value="fixed">
                   <label for="filter_fixed">Фиксированная</label>
                 </li>
                 <li>
-                <input type="radio" name="grid" id="filter_rubbery" value="rubbery">
-                <label for="filter_rubbery">Адаптивная</label>
+                <input class="filter-input" type="radio" name="grid" id="filter_rubbery" value="rubbery">
+                <label for="filter_rubbery">Резиновая</label>
                 </li>
               </ul>
           </fieldset>
@@ -64,34 +73,34 @@
             <legend>Особенности:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="slider" id="filter_slider" checked>
+                  <input class="filter-input" type="checkbox" name="slider" id="filter_slider" checked>
                   <label for="filter_slider">Слайдер</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="block_advantage" id="filter_block_advantage">
+                  <input class="filter-input" type="checkbox" name="block_advantage" id="filter_block_advantage">
                   <label for="filter_block_advantage">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="news" id="filter_news" checked>
+                  <input class="filter-input" type="checkbox" name="news" id="filter_news" checked>
                   <label for="filter_news">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="gallery" id="filter_gallery">
+                  <input class="filter-input" type="checkbox" name="gallery" id="filter_gallery">
                   <label for="filter_gallery">Галерея</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="cart" id="filter_cart">
+                  <input class="filter-input" type="checkbox" name="cart" id="filter_cart">
                   <label for="filter_cart">Корзина</label>
                 </li>
               </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="filter_button" type="submit">Показать</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually_hidden">Список каталога</h2>
-          <ul>
+          <ul class="catalog_list">
             <li>
               <a href="">
                 <h3>Sedona</h3>
@@ -144,7 +153,7 @@
           
       </section>
 
-      <div>
+      <div class="pages">
         <ul>
           <li>
             <button disabled>1</button>
@@ -179,7 +188,7 @@
       </section>
 
       <div>
-        <ul>
+        <ul class="social">
           <li>
             <a href="">
               <img src="img/vk-icon.svg"  width="26" heigth="15" alt="ВКонтакте">
@@ -198,13 +207,13 @@
         </ul>
       </div>
 
-      <div>
+      <div class="friendly">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
 
-    <section>
+    <section class="contact_us">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -217,7 +226,7 @@
         </p>
         <p>
           <label for="review">Текст письма:</label>
-          <textarea id="review" name="review" rows="5">В свободной форме</textarea>
+          <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>

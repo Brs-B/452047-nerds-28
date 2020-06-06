@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       
     <header>
       <nav>
-        <a>
+        <a class="nerds-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
-        <ul>
+        <ul class="site_navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
-        <a href="">Корзина</a>
+        <div class="cart_navigation">
+          <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
+          <a href="">Корзина</a>
+        </div>
       </nav>
     </header>
 
@@ -51,24 +56,24 @@
 
       <section>
         <h2 class="visually_hidden">Контент</h2>
-          <ul>
-            <li>
+          <ul class="content_list">
+            <li class="content_item">
               <img src="img/illustration-1.jpg" alt="Веб-сайты">
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="">Заказать</a>
+              <a class="button button_red" href="">Заказать</a>
             </li>
-            <li>
+            <li class="content_item">
               <img src="img/illustration-2.jpg" alt="Приложения">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="">Заказать</a>
+              <a class="button button_green" href="">Заказать</a>
             </li>
-            <li>
+            <li class="content_item">
               <img src="img/illustration-3.jpg" alt="Презентации">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны</p>
-              <a href="">Заказать</a>
+              <a class="button button_yellow" href="">Заказать</a>
             </li>
           </ul>
       </section>
@@ -158,7 +163,7 @@
       </section>
 
       <div>
-        <ul>
+        <ul class="social">
           <li>
             <a href="">
               <img src="img/vk-icon.svg"  width="26" heigth="15" alt="ВКонтакте">
@@ -177,13 +182,13 @@
         </ul>
       </div>
 
-      <div>
+      <div class="friendly">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
 
-    <section>
+    <section class="contact_us">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -196,7 +201,7 @@
         </p>
         <p>
           <label for="review">Текст письма:</label>
-          <textarea id="review" name="review" rows="5">В свободной форме</textarea>
+          <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
