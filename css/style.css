@@ -5,11 +5,14 @@
   --basic_gray_hover: #DFDFDF;
   --basic_dark_gray: #4D4D4D;
   --basic_red: #FB565A;
-  --basic_red_hover: #E74246; 
+  --basic_red_hover: #E74246;
+  --basic_red_active: #D7373B;
   --basic_green: #00CA74;
   --basic_green_hover: #00BC6C;
+  --basic_green_active: #00AA62;
   --basic_yellow: #EFC849;
   --basic_yellow_hover: #EAB534;
+  --basic_yellow_active: #E5A722;
   --basic_white: #ffffff;
 }   
 
@@ -17,7 +20,7 @@ body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -35,7 +38,7 @@ img {
   height: auto;
 }
 
-nav {
+.navigation {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -91,20 +94,32 @@ nav {
 .button_red {
   background-color: var(--basic_red);
 }
-.button_red:hover {
+.button_red:hover,
+.button_red:focus {
   background-color: var(--basic_red_hover);
+}
+.button_red:active {
+  background-color: var(--basic_red_active);
 }
 .button_green {
   background-color: var(--basic_green);
 }
-.button_green:hover {
+.button_green:hover,
+.button_green:focus {
   background-color: var(--basic_green_hover);
+}
+.button_green:active {
+  background-color: var(--basic_green_active);
 }
 .button_yellow {
   background-color: var(--basic_yellow);
 }
-.button_yellow:hover {
+.button_yellow:hover,
+.button_yellow:focus {
   background-color: var(--basic_yellow_hover);
+}
+.button_yellow:active {
+  background-color: var(--basic_yellow_active);
 }
 
 .catalog_title{
@@ -133,7 +148,7 @@ nav {
   color: var(--basic_light_black);
   text-transform: none;
 }
-.filter input + label
+.filter input + label,
 .filter input:hover + label {
   color: var(--basic_light_black);
 }
@@ -158,8 +173,18 @@ nav {
 .pages ul {
   list-style: none;
 }
-.social {
+.social ul {
   list-style: none;
+}
+.social_button {
+  background-color: #E1E1E1;
+}
+.social_button:hover,
+.social_button:focus {
+  background-color: var(--basic_red_hover);
+}
+.social_button:active {
+  background-color: var(--basic_red_active);
 }
 .friendly h2 {
   font-weight: 700;
@@ -192,4 +217,7 @@ nav {
 .contact_us input:focus,
 .contact_us textarea:focus {
     border-color: #B4B9BB;
+}
+.visually_hidden {
+  visibility: hidden;
 }
