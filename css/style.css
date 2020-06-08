@@ -153,6 +153,11 @@ img {
 .filter input:hover + label {
   color: var(--basic_light_black);
 }
+.filter input:disabled + label {
+  color: var(--basic_light_black);
+  opacity: 0.3;
+}
+
 .filter_button {
   font-weight: 500;
   font-size: 16px;
