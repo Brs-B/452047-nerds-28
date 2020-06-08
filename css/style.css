@@ -3,6 +3,7 @@
   --basic_light_black: #283136;
   --basic_gray: #EEEEEE;
   --basic_gray_hover: #DFDFDF;
+  --basic_gray_active: #D5D5D5;
   --basic_dark_gray: #4D4D4D;
   --basic_red: #FB565A;
   --basic_red_hover: #E74246;
@@ -163,8 +164,12 @@ img {
   background-color: var(--basic_gray);
   border: none;
 }
-.filter_button:hover {
+.filter_button:hover,
+.filter_button:focus {
   background-color: var(--basic_gray_hover);
+}
+.filter_button:active {
+  background-color: var(--basic_gray_active);
 }
 
 .catalog_list {
