@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page_body">
       
-    <header>
+    <header class="main_header">
       <nav class="navigation">
-        <a class="nerds-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
-        </a>
-        <ul class="site_navigation">
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <div class="cart_navigation">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
-          <a href="">Корзина</a>
+        <div class="container">
+          <a class="nerds_logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+          </a>
         </div>
+        <div class="main_navigation_wrapper">
+          <div class="container">
+            <ul class="site_navigation">
+              <li><a href="">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="cart_navigation">
+              <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
+              <a class="cart_link" href="">Корзина</a>
+            </div>
+          </div>
+        </div> 
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="visually_hidden">HTML Academy Нердс</h1>
       
       <section>
@@ -54,7 +60,7 @@
           </ul>
       </section>
 
-      <section>
+      <section class="content">
         <h2 class="visually_hidden">Контент</h2>
           <ul class="content_list">
             <li class="content_item">
@@ -113,7 +119,7 @@
         <ul>
           <li>
             <a href="https:/htmlacademy.ru">
-              <h3>HTML-Academy</h3>
+              <h3 class="visually_hidden">HTML-Academy</h3>
               <div>
                 <img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML-Academy">
               </div>
@@ -121,7 +127,7 @@
           </li>
           <li>
             <a href="">
-              <h3>Borodinski</h3>
+              <h3 class="visually_hidden">Borodinski</h3>
               <div>
                 <img src="img/logo-borodinski.png" width="209" height="90" alt="Borodinski">
               </div>
@@ -129,7 +135,7 @@
           </li>
           <li>
             <a href="">
-              <h3>Pink</h3>
+              <h3 class="visually_hidden">Pink</h3>
               <div>
                 <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
               </div>
@@ -137,7 +143,7 @@
           </li>
           <li>
             <a href="">
-              <h3>Mishka</h3>
+              <h3 class="visually_hidden">Mishka</h3>
               <div>
                 <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
               </div>
@@ -148,44 +154,47 @@
 
     </main>
     
-    <footer>
-      <section>
+    <footer class="main_footer page_footer">
+      <section class="footer_contacts">
+          
         <h2 class="visually_hidden">Адрес</h2>
-        <h3>Nёrds Design studio</h3>
-        <p>
-          191186, Санкт-Петербург<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p><a href="tel:++78122757575">тел. +7(812)275-75-75</a></p>
-        <p><a href="">Напишите нам</a></p>
+          <h3>Nёrds Design studio</h3>
+          <p>
+            191186, Санкт-Петербург<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p><a href="tel:++78122757575">тел. +7(812)275-75-75</a></p>
+          <p><a href="">Напишите нам</a></p>
         <img src="img/map1.jpg" alt="Google-maps">
-        
+          
       </section>
 
-      <div class="social">
-        <ul>
-          <li>
-            <a class="social_button" href="">
-              <img src="img/vk-icon.svg"  width="26" heigth="15" alt="ВКонтакте">
-            </a>
-          </li>
-          <li>
-            <a class="social_button" href="">
-              <img src="img/fb-icon.svg" width="12" heigth="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li>
-            <a class="social_button" href="">
-              <img src="img/insta-icon.svg" width="21" heigth="11" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="container">
+        <div class="footer_social">
+          <ul>
+            <li>
+              <a class="social_button" href="">
+                <img src="img/vk-icon.svg"  width="26" heigth="15" alt="ВКонтакте">
+              </a>
+            </li>
+            <li>
+              <a class="social_button" href="">
+                <img src="img/fb-icon.svg" width="12" heigth="22" alt="Фейсбук">
+              </a>
+            </li>
+            <li>
+              <a class="social_button" href="">
+                <img src="img/insta-icon.svg" width="21" heigth="11" alt="Инстаграм">
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="friendly">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+        <div class="friendly">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>  
     </footer>
 
     <section class="contact_us">
