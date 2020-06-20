@@ -10,14 +10,12 @@
   <body class="page_body">
       
     <header class="main_header">
-      <nav class="navigation">
-        <div class="container">
+      <div class="container">
+        <nav class="navigation">
           <a class="nerds_logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
           </a>
-        </div>
-        <div class="main_navigation_wrapper">
-          <div class="container">
+          <div class="main_navigation_wrapper">
             <ul class="site_navigation">
               <li><a href="">Студия</a></li>
               <li><a href="">Клиенты</a></li>
@@ -29,12 +27,12 @@
               <a class="cart_link" href="">Корзина</a>
             </div>
           </div>
-        </div> 
-      </nav>
-    </header>
-    
+        </nav>
+        <h1 class="catalog_title">Магазин готовых шаблонов</h1>
+      </div>
+    </header>  
     <main class="catalog_page container">
-      <h1 class="catalog_title">Магазин готовых шаблонов</h1>
+      
       
       <section class="sort">
         <h2 class="visually_hidden">Сортировка</h2>
@@ -45,7 +43,7 @@
         </ul>
       </section>
 
-      <section class="sort_price">
+      <section class="filter_price">
         <h2 class="visually_hidden">Стоимость-ползунок</h2>
         <label for="price">Стоимость:</label>
           <input type="range" id="price" name="price" min="0" max="15000" multiple>
@@ -220,27 +218,27 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>  
-    </footer>
 
-    <section class="contact_us">
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="your_name">Ваше Имя:</label>
-          <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="your_email">Ваш email:</label>
-          <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="review">Текст письма:</label>
-          <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
+      <section class="contact_us">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="your_name">Ваше Имя:</label>
+            <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="your_email">Ваш email:</label>
+            <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
+          </p>
+          <p>
+            <label for="review">Текст письма:</label>
+            <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
+      </section>
+    </footer>
 
   </body>
 </html>
