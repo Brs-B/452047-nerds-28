@@ -28,28 +28,34 @@
             </div>
           </div>
         </nav>
-        <section>
+        <section class="sliders">
           <h2 class="visually_hidden">Вступление со слайдами</h2>
             <ul>
-              <li>
-                <h3>Долго, дорого, скурпулезно</h3>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <li class="show_slider1">
+                <h3 class="slide_title">Долго, дорого, скурпулезно</h3>
+                <p class="slide_text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 <a href="">Узнать больше</a>
                 <img src="img/nerds-index-slide1.png" alt="Долго, дорого, скурпулезно">
               </li>
-              <li>
-                <h3>Любим математику как никто другой</h3>
-                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <li class="show_slider">
+                <h3 class="slide_title">Любим математику как никто другой</h3>
+                <p class="slide_text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
                 <a href="">Узнать больше</a>
                 <img src="img/nerds-index-slide2.png" alt="Любим математику как никто другой">
               </li>
-              <li>
-                <h3>Только ночь, только хардкор</h3>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <li class="show_slider">
+                <h3 class="slide_title">Только ночь, только хардкор</h3>
+                <p class="slide_text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 <a href="">Узнать больше</a>
                 <img src="img/nerds-index-slide3.png" alt="Только ночь, только хардкор">
               </li>
             </ul>
+
+            <div class="slide_dots">
+              <span class="slide_dot" onclick="currentSlide(1)"></span>
+              <span class="slide_dot" onclick="currentSlide(2)"></span>
+              <span class="slide_dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
     </header>
 

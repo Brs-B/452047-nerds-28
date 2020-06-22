@@ -59,8 +59,7 @@ img {
   margin-bottom: 70px;
   color: var(--basic_black);
   background-color: var(--basic_gray);
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
+
 }
 .navigation {
   font-size: 16px;
@@ -72,8 +71,7 @@ img {
 .nerds_logo {
   width: 160px;
   height: 65px;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
+
 }
 .container {
   width: 1160px;
@@ -94,13 +92,11 @@ img {
   padding: 0;
   min-height: 95px;
   list-style: none;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+
 }
 .cart_navigation {
   max-width: 150px;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
+
 }
 
 .site_navigation a,
@@ -121,10 +117,38 @@ img {
   padding-left: 25px;
 }
 
+.sliders {
+  position: relative;
+  margin: auto;
+}
+.sliders ul {
+  list-style: none;
+}
+.show_slider {
+  display: none;
+}
+.slide_dots {
+  text-align: center;
+}
+.slide_dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .slide_dot:hover {
+  
+  background-color: #c1c1c1;
+}
+
 /* Main-Index */
 
 .content {
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  
   margin-bottom: 80px;
 }
 .content_list {
@@ -139,8 +163,7 @@ img {
 .content_item {
   width: 400px;
   text-align: left;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+
 }
 .content_item h3 {
   font-weight: 700;
@@ -209,8 +232,7 @@ img {
   "price sorting sorting"
   "filters catalog catalog"
   "filters pagination pagination";
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
+
 }
 .catalog_title{
   text-align: center;
@@ -224,8 +246,7 @@ img {
   color: var(--basic_black);
   background-color: var(--basic_gray);
   text-transform: none;
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+
 }
 
 .sort {
@@ -238,8 +259,7 @@ img {
 .filters {
   grid-area: filters;
   width: 360px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
+
 }
 .filter_price {
   grid-area: price;
@@ -304,8 +324,7 @@ img {
 .catalog {
   grid-area: catalog;
   min-width: 720px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
+
 }
 .catalog_list {
   display: flex;
@@ -338,16 +357,14 @@ img {
 .main_footer {
   padding: 60px 0;
   margin-top: 80px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+
 }
 .main_footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .footer_contacts { 
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+
 }
 .footer-contacts p {
   margin: 0;
@@ -355,8 +372,7 @@ img {
 .footer_social {
   width: 260px;
   justify-self: start;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
+
 }
 .footer_social ul {
   display: grid;
@@ -376,8 +392,7 @@ img {
 .friendly {
   margin: 0;
   justify-self: center;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
+
 }
 .friendly h2 {
   margin-bottom: 10px;
