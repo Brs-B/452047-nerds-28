@@ -363,9 +363,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.footer_contacts { 
 
-}
 .footer-contacts p {
   margin: 0;
 }
