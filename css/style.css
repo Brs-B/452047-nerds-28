@@ -255,12 +255,68 @@ img {
 
 .sort {
   grid-area: sorting;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+}
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
 }
 .sort_catalog_list {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
+.sort_catalog_list h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.sort_catalog_list li {
+  position: relative;
+  margin-right: 25px;
+}
+.sort_catalog_list li:first-child {
+  position: relative;
+  margin-left: 170px;
+}
+.sort_catalog_list a {
+  color: var(--basic_black);
+  display: block;
+  opacity: 0.3;
+}
+.sort_catalog_list a:focus,
+.sort_catalog_list a:hover {
+  opacity: 0.6;
+}
+.sort_catalog_list a:active {
+  opacity: 1;
+}
+.sort_by_arrows {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.sort_by_arrows li{
+  margin-right: 18px;
+}
+.sort_by_arrows li:last-child{
+  margin-right: 0;
+}
+
 
 .filter_price {
   margin-bottom: 100px;
