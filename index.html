@@ -12,10 +12,10 @@
     <header class="main_header">
       <div class="container">
         <nav class="navigation">
-          <a class="nerds_logo">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
-          </a>
           <div class="main_navigation_wrapper">
+            <a class="nerds_logo">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+            </a>
             <ul class="site_navigation">
               <li><a href="">Студия</a></li>
               <li><a href="">Клиенты</a></li>
@@ -23,7 +23,6 @@
               <li><a href="">Контакты</a></li>
             </ul>
             <div class="cart_navigation">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
               <a class="cart_link" href="">Корзина</a>
             </div>
           </div>
@@ -51,11 +50,6 @@
               </li>
             </ul>
 
-            <div class="slide_dots">
-              <span class="slide_dot" onclick="currentSlide(1)"></span>
-              <span class="slide_dot" onclick="currentSlide(2)"></span>
-              <span class="slide_dot" onclick="currentSlide(3)"></span>
-            </div>
         </section>
     </header>
 
@@ -159,19 +153,21 @@
     </main>
     
     <footer class="main_footer page_footer">
-      <section class="footer_contacts">
-          
-        <h2 class="visually_hidden">Адрес</h2>
-          <h3>Nёrds Design studio</h3>
-          <p>
-            191186, Санкт-Петербург<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p><a href="tel:++78122757575">тел. +7(812)275-75-75</a></p>
-          <p><a href="">Напишите нам</a></p>
-        <img src="img/map1.jpg" alt="Google-maps">
-          
-      </section>
+      <div class="background_footer">
+        <div class="container">
+          <section class="footer_contacts"> 
+            <h2 class="visually_hidden">Адрес</h2>
+            <h3>Nёrds Design studio</h3>
+            <p>
+              191186, Санкт-Петербург<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <br>
+            <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
+            <button class="button button_red" type="button">Напишите нам</button> 
+          </section>
+        </div>  
+      </div>
 
       <div class="container">
         <div class="footer_social">
@@ -198,28 +194,29 @@
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>  
+      </div>
+    </footer>  
 
-      <section class="contact_us">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="your_name">Ваше Имя:</label>
-            <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
-          </p>
-          <p>
-            <label for="your_email">Ваш email:</label>
-            <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
-          </p>
-          <p>
-            <label for="review">Текст письма:</label>
-            <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
-    </footer>
+    <section class="modal contact_us">
+      <h2>Напишите нам</h2>
+      <form class="contact_us_form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact_us_item">
+          <label for="your_name">Ваше Имя:</label>
+          <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="contact_us_item">
+          <label for="your_email">Ваш email:</label>
+          <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p class="contact_us_review">
+          <label for="review">Текст письма:</label>
+          <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button_red" type="submit">Отправить</button>
+      </form>
+      <button class="contact_us_close" type="button" aria-label="Закрыть"></button>
+    </section>
+    
 
   </body>
 </html>

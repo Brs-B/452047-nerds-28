@@ -12,10 +12,10 @@
     <header class="main_header">
       <div class="container">
         <nav class="navigation">
-          <a class="nerds_logo" href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
-          </a>
           <div class="main_navigation_wrapper">
+            <a class="nerds_logo" href="index.html">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+            </a>
             <ul class="site_navigation">
               <li><a href="">Студия</a></li>
               <li><a href="">Клиенты</a></li>
@@ -23,7 +23,6 @@
               <li><a href="">Контакты</a></li>
             </ul>
             <div class="cart_navigation">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="cart-icon">
               <a class="cart_link" href="">Корзина</a>
             </div>
           </div>
@@ -36,69 +35,98 @@
       
       <section class="sort">
         <h2 class="visually_hidden">Сортировка</h2>
-        <ul class="sort_type">Сортировать:
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
+        <ul class="sort_catalog_list">Сортировать:
+          <li>
+            <a href="">По цене</a>
+          </li>
+          <li>
+            <a href="">По типу</a>
+          </li>
+          <li>
+            <a href="">По названию</a>
+          </li>
         </ul>
       </section>
 
       <section class="filter_price">
         <h2 class="visually_hidden">Стоимость-ползунок</h2>
-        <label for="price">Стоимость:</label>
-          <input type="range" id="price" name="price" min="0" max="15000" multiple>
-          <output name="price">0</output>
-          <output name="price">15000</output>
+        <fieldset class="filter_item">
+          <legend>Стоимость:</legend>
+          <div class="range_filter">
+            <div class="range_controls">
+              <div class="scale">
+                <div class="bar" style="
+                width: 30%;
+                margin-left: 20%
+              "></div>
+              </div>
+              <div class="toggle toggle_min" tabindex="0" style="
+              left: 20%
+              "></div>
+              <div class="toggle toggle_max" tabindex="0" style="
+              left: 50%
+              "></div>
+            </div>
+            <div class="price_controls">
+              <label class="min_price">
+                от <input type="number" id="min_price" name="min_price" value="0">
+              </label>
+              <label class="max_price">
+                до <input type="number" id="max_price" name="max_price" value="15000">
+              </label>
+            </div>
+          </div>
+        </fieldset>  
         
       </section>
       
       <section class="filters">
         <h2 class="visually_hidden">Фильтр каталога</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filters_radio">
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter_option filter_radio">
-                  <input class="filter_input" type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
+                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
                   <label for="filter_adaptive">Адаптивная</label>
                 </li>
                 <li class="filter_option filter_radio">
-                  <input class="filter_input" type="radio" name="grid" id="filter_fixed" value="fixed">
+                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_fixed" value="fixed">
                   <label for="filter_fixed">Фиксированная</label>
                 </li>
                 <li class="filter_option filter_radio">
-                <input class="filter_input" type="radio" name="grid" id="filter_rubbery" value="rubbery">
+                <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_rubbery" value="rubbery">
                 <label for="filter_rubbery">Резиновая</label>
                 </li>
               </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filters_checkbox">
             <legend>Особенности:</legend>
               <ul>
                 <li class="filter_option filter_checkbox">
-                  <input class="filter_input" type="checkbox" name="slider" id="filter_slider" checked>
+                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="slider" id="filter_slider" checked>
                   <label for="filter_slider">Слайдер</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="filter_input" type="checkbox" name="block_advantage" id="filter_block_advantage">
+                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="block_advantage" id="filter_block_advantage">
                   <label for="filter_block_advantage">Блок преимуществ</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="filter_input" type="checkbox" name="news" id="filter_news" checked>
+                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="news" id="filter_news" checked>
                   <label for="filter_news">Новости</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="filter_input" type="checkbox" name="gallery" id="filter_gallery">
+                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="gallery" id="filter_gallery">
                   <label for="filter_gallery">Галерея</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="filter_input" type="checkbox" name="cart" id="filter_cart">
+                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="cart" id="filter_cart">
                   <label for="filter_cart">Корзина</label>
                 </li>
               </ul>
           </fieldset>
-          <button class="filter_button" type="submit">Показать</button>
+          <button class="filter_button button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -158,18 +186,18 @@
       </section>
 
       <div class="pages">
-        <ul>
-          <li>
-            <button disabled>1</button>
+        <ul class="pagination_list">
+          <li class="pagination_item page_current">
+            <a href="#">1</a>
           </li>
-          <li>
-            <button>2</button>
+          <li class="pagination_item">
+            <a href="#">2</a>
           </li>
-          <li>
-            <button>3</button>
+          <li class="pagination_item">
+            <a href="#">3</a>
           </li>
-          <li>
-            <button>Следующая</button>
+          <li class="pagination_item">
+            <a class="#">Следующая</a>
           </li>
         </ul>
                 
@@ -178,19 +206,21 @@
     </main>
     
     <footer class="main_footer page_footer">
-      <section class="footer_contacts">
-          
-        <h2 class="visually_hidden">Адрес</h2>
-          <h3>Nёrds Design studio</h3>
-          <p>
-            191186, Санкт-Петербург<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p><a href="tel:++78122757575">тел. +7(812)275-75-75</a></p>
-          <p><a href="">Напишите нам</a></p>
-        <img src="img/map1.jpg" alt="Google-maps">
-          
-      </section>
+      <div class="background_footer">
+        <div class="container">
+          <section class="footer_contacts"> 
+            <h2 class="visually_hidden">Адрес</h2>
+            <h3>Nёrds Design studio</h3>
+            <p>
+              191186, Санкт-Петербург<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <br>
+            <p><a href="tel:+78122757575">тел. +7(812)275-75-75</a></p>
+            <button class="button button_red" type="button">Напишите нам</button> 
+          </section>
+        </div>  
+      </div>
 
       <div class="container">
         <div class="footer_social">
@@ -217,28 +247,29 @@
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>  
+      </div>
+    </footer>  
 
-      <section class="contact_us">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="your_name">Ваше Имя:</label>
-            <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
-          </p>
-          <p>
-            <label for="your_email">Ваш email:</label>
-            <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
-          </p>
-          <p>
-            <label for="review">Текст письма:</label>
-            <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
-    </footer>
+    <section class="modal contact_us">
+      <h2>Напишите нам</h2>
+      <form class="contact_us_form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact_us_item">
+          <label for="your_name">Ваше Имя:</label>
+          <input type="text" id="your_name" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="contact_us_item">
+          <label for="your_email">Ваш email:</label>
+          <input type="text" id="your_email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p class="contact_us_review">
+          <label for="review">Текст письма:</label>
+          <textarea id="review" name="review" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button_red" type="submit">Отправить</button>
+      </form>
+      <button class="contact_us_close" type="button" aria-label="Закрыть"></button>
+    </section>
+    
 
   </body>
 </html>
