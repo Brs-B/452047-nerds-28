@@ -709,37 +709,19 @@ img {
 }
 .contact_us {
   display: none;
-  top: 120px;
   bottom: auto;
   width: 960px;
-  padding: 50px 80px;
+  padding: 75px 100px 85px 100px;
 }
 
 .contact_us_form {
-  width: 750px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .contact_us_item {
   width: 360px;
-
-}
-.contact_us_item input{
-  width: 360px;
-}
-.contact_us_review {
-  width: 760px;
-
-}
-
-.contact_us_review textarea {
-  width: 760px;
-  height: 210px;
-}
-
-.contact_us h2{
-  text-transform: none;
+  margin-bottom: 16px;
 }
 .contact_us label{
   font-weight: 700;
@@ -748,6 +730,29 @@ img {
   line-height: 18px;
   text-transform: none;
 }
+.contact_us_item input{
+  width: 360px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 40px;
+  
+}
+.contact_us_review {
+  width: 760px;
+  margin-bottom: 16px;
+}
+
+.contact_us_review textarea {
+  width: 760px;
+  height: 210px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.contact_us h2{
+  text-transform: none;
+}
+
 .contact_us input,
 .contact_us textarea {
     background-color: transparent;
@@ -755,9 +760,10 @@ img {
 }
 .contact_us input:focus,
 .contact_us textarea:focus {
-    border-color: #B4B9BB;
+    border-color: var(--basic_black);
 }
 .contact_us .button_red {
+  width: 260px;
   padding: 16px 40px;
   font: inherit;
   text-align: center;
