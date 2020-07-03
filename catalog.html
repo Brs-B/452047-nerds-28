@@ -50,93 +50,83 @@
           </ul>
           <ul class="sort_by_arrows">
             <li class="arrow_down">
-              <a>
+              <button type="button">
                 <img src="img/icon-down-dir.svg" width="11" heigth="10" alt="по убыванию">
-              </a>
+              </button>
             </li>
             <li class="arrow_up">
-              <a>
+              <button type="button">
                 <img src="img/icon-up-dir.svg" width="11" heigth="10" alt="по возрастанию">
-              </a>
+              </button>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="filter_price">
-        <h2 class="visually_hidden">Стоимость-ползунок</h2>
-        <fieldset class="filter_item">
-          <legend>Стоимость:</legend>
-          <div class="range_filter">
-            <div class="range_controls">
-              <div class="scale">
-                <div class="bar" style="
-                width: 30%;
-                margin-left: 20%
-              "></div>
-              </div>
-              <div class="toggle toggle_min" tabindex="0" style="
-              left: 20%
-              "></div>
-              <div class="toggle toggle_max" tabindex="0" style="
-              left: 50%
-              "></div>
-            </div>
-            <div class="price_controls">
-              <label class="min_price">
-                от <input type="number" id="min_price" name="min_price" value="0">
-              </label>
-              <label class="max_price">
-                до <input type="number" id="max_price" name="max_price" value="15000">
-              </label>
-            </div>
-          </div>
-        </fieldset>  
-        
-      </section>
-      
       <section class="filters">
-        <h2 class="visually_hidden">Фильтр каталога</h2>
+        <h2 class="visually_hidden">Стоимость-ползунок</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter_item">
+            <legend>Стоимость:</legend>
+            <div class="range_filter">
+              <div class="range_controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle_min" tabindex="0"></div>
+                <div class="toggle toggle_max" tabindex="0"></div>
+              </div>
+              <div class="price_controls">
+                <label class="min_price">
+                  от <input type="number" id="min_price" name="min_price" value="0">
+                </label>
+                <label class="max_price">
+                  до <input type="number" id="max_price" name="max_price" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>  
+
+          <h2 class="visually_hidden">Фильтр каталога</h2>
           <fieldset class="filters_radio">
-            <legend>Сетка:</legend>
+            <legend class="filters_radio_and_cb">Сетка:</legend>
               <ul>
                 <li class="filter_option filter_radio">
-                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
+                  <input hidden="true" class="filter_input filter_input_radio" type="radio" name="grid" id="filter_adaptive" value="adaptive" checked>
                   <label for="filter_adaptive">Адаптивная</label>
                 </li>
                 <li class="filter_option filter_radio">
-                  <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_fixed" value="fixed">
+                  <input hidden="true" class="filter_input filter_input_radio" type="radio" name="grid" id="filter_fixed" value="fixed">
                   <label for="filter_fixed">Фиксированная</label>
                 </li>
                 <li class="filter_option filter_radio">
-                <input class="visually_hidden filter_input filter_input_radio" type="radio" name="grid" id="filter_rubbery" value="rubbery">
+                <input hidden="true" class="filter_input filter_input_radio" type="radio" name="grid" id="filter_rubbery" value="rubbery">
                 <label for="filter_rubbery">Резиновая</label>
                 </li>
               </ul>
           </fieldset>
 
           <fieldset class="filters_checkbox">
-            <legend>Особенности:</legend>
+            <legend class="filters_radio_and_cb">Особенности:</legend>
               <ul>
                 <li class="filter_option filter_checkbox">
-                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="slider" id="filter_slider" checked>
+                  <input hidden="true" class="filter_input filter_input_cb" type="checkbox" name="slider" id="filter_slider" checked>
                   <label for="filter_slider">Слайдер</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="block_advantage" id="filter_block_advantage">
+                  <input hidden="true" class="filter_input filter_input_cb" type="checkbox" name="block_advantage" id="filter_block_advantage">
                   <label for="filter_block_advantage">Блок преимуществ</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="news" id="filter_news" checked>
+                  <input hidden="true" class="filter_input filter_input_cb" type="checkbox" name="news" id="filter_news" checked>
                   <label for="filter_news">Новости</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="gallery" id="filter_gallery">
+                  <input hidden="true" class="filter_input filter_input_cb" type="checkbox" name="gallery" id="filter_gallery">
                   <label for="filter_gallery">Галерея</label>
                 </li>
                 <li class="filter_option filter_checkbox">
-                  <input class="visually_hidden filter_input filter_input_cb" type="checkbox" name="cart" id="filter_cart">
+                  <input hidden="true" class="filter_input filter_input_cb" type="checkbox" name="cart" id="filter_cart">
                   <label for="filter_cart">Корзина</label>
                 </li>
               </ul>
@@ -237,7 +227,7 @@
         </div>  
       </div>
 
-      <div class="container">
+      <div class="container footer_footer">
         <div class="footer_social">
           <ul>
             <li>
